@@ -58,7 +58,39 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="/Imagens/ApacheKafka.svg" alt="Imagem Livro"></div>
+              <div class="swiper-slide"><img src="/Imagens/Liderança.svg" alt="Imagem Livro"></div>
+              <div class="swiper-slide"><img src="/Imagens/Javascript.svg" alt="Imagem Livro"></div>
+              <div class="swiper-slide"><img src="/Imagens/Guia Front-end.svg" alt="Imagem Livro"></div>
+              <div class="swiper-slide"><img src="/Imagens/Acessibilidade.svg" alt="Imagem Livro"></div>
+              <div class="swiper-slide"><img src="/Imagens/Portugol.svg" alt="Imagem Livro"></div>
+            </div>
+            
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+             el: '.swiper-pagination',
+            type: 'bullets',
+  },
+        });
+    </script>
 </body>
 
 </html>
